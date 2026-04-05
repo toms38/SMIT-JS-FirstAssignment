@@ -9,24 +9,14 @@
     
 </body>
 <script>
-//     for Loop Tasks
-
-
-// Write a program to display the multiplication table of 5
-// Calculate the sum of numbers from 1 to 50
-// Print numbers in reverse order (10 to 1)
-// while Loop Tasks
-// Print numbers from 1 to 10 using a while loop
-// Print all odd numbers from 1 to 20
-// Calculate the sum of numbers from 1 to 100
-// Print numbers in reverse order (10 to 1)
-// Create a password checker that keeps asking the user until they enter the correct password (admin123)
+//     *****for Loop Tasks******
     
     // Print numbers from 1 to 10 using a for loop
     console.log(`Numbers from 1 to 10`);
     for(let i=1;i<=10;i++){
     console.log(i);
     }
+
 
     // Print all even numbers from 1 to 20
     console.log(`Even numbers from 1 to 20`);
@@ -36,5 +26,81 @@
      }
     }
     
+
+    // Write a program to display the multiplication table of 5
+    console.log(`The multiplication table of 5`)
+    for(let i=1;i<=10;i++){
+        let number=5;
+        console.log(`${number} * ${i} = ${number * i}`);
+    }
+
+
+    // Calculate the sum of numbers from 1 to 50
+    console.log(`Calculate the sum of numbers from 1 to 50`)
+    let sum=0;
+    for(let i=1;i<=50;i++){
+       sum+=i;
+    }
+    console.log(`The sum of numbers from 1 to 50 are ${sum}`)
+
+
+    // Print numbers in reverse order (10 to 1)
+    console.log(`Print numbers in reverse order (10 to 1)`);
+    for(let i=10;i>=1;i--){
+        console.log(i);
+    }
+
+
+    // ***while Loop Tasks***
+
+    // Print numbers from 1 to 10 using a while loop
+    console.log(`Print numbers from 1 to 10 using a while loop`);
+    let i=1;
+    while(i<=10){
+        console.log(i);
+        i++;
+    }
+
+    // Print all odd numbers from 1 to 20
+    console.log(`Print all odd numbers from 1 to 20`);
+    let number=0;
+    while (number<=20) {
+        if(number%2==1){
+        console.log(number);
+    }
+    number++;
+    }
+
+    // Calculate the sum of numbers from 1 to 100
+    console.log(`// Calculate the sum of numbers from 1 to 100`);
+    let summ=0
+    let num=1;
+    while (num<=100) {
+        summ +=num;
+        num++;
+    }
+    console.log(summ);
+    
+    // Print numbers in reverse order (10 to 1)
+    console.log(`// Print numbers in reverse order (10 to 1)`);
+    let numb=10;
+    while (numb>10) {
+        console.log(numb);
+        numb--;
+    }
+
+    // Create a password checker that keeps asking the user until they enter the correct password (admin123)
+    let password="admin123";
+    let abc= prompt(userenterpassword);
+    while (password!=userenterpassword) {
+        let userenterpassword= prompt("Enter your password ");
+        console.log("Please Enter correcr password ");
+    }
+     console.log("Good your password is correct");
+     
+    
+
+    
+
 </script>
 </html>
