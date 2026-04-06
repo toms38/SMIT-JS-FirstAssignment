@@ -82,25 +82,25 @@
     console.log(summ);
     
     // Print numbers in reverse order (10 to 1)
-    console.log(`// Print numbers in reverse order (10 to 1)`);
+    console.log(`Print numbers in reverse order (10 to 1)`);
     let numb=10;
-    while (numb>10) {
+    while (numb>=1) {
         console.log(numb);
         numb--;
     }
 
-    // Create a password checker that keeps asking the user until they enter the correct password (admin123)
+    // Create a password checker that keeps asking the user 
+    // until they enter the correct password (admin123)
     let password="admin123";
-    let abc= prompt(userenterpassword);
-    while (password!=userenterpassword) {
-        let userenterpassword= prompt("Enter your password ");
-        console.log("Please Enter correcr password ");
+    let userpassword = "";
+    while (password!==userpassword) {
+         userpassword= prompt("Enter your password ");
+        if(userpassword!==password){
+            alert("Please Enter a valid password, TRY AGAIN!")
+        }
     }
-     console.log("Good your password is correct");
-     
-    
+    alert("GREAT YOU CRACKE IT!");
 
-    
 
 </script>
 </html>
